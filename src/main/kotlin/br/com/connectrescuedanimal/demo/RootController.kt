@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/root")
-class Root {
+class RootController {
     @GetMapping
-    fun welcone(): String {
+    fun welcome(): String {
         return "Bem vindo! \n Está ajudando um animalzinho abandonado? \n Vamos te ajudar!"
     }
 }
