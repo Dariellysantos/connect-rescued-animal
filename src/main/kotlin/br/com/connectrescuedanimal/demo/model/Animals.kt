@@ -1,7 +1,5 @@
 package br.com.connectrescuedanimal.demo.model
 
-import jdk.nashorn.internal.runtime.Debug.id
-
 data class Animals(
     val id: Long,
     val genre: String,
