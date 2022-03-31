@@ -1,6 +1,6 @@
 package br.com.connectrescuedanimal.demo.controller
 
-import br.com.connectrescuedanimal.demo.model.Protectress
+import br.com.connectrescuedanimal.demo.dto.RegisterDTO
 import br.com.connectrescuedanimal.demo.service.ProtectressService
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -13,7 +13,7 @@ class ProtectressController(private val service: ProtectressService) {
 
 
     @PostMapping
-    fun register(@RequestBody protectress: Protectress): Protectress {
-        return service.register(protectress)
+    fun register(@RequestBody dtoProtectress: RegisterDTO): RegisterDTO {
+        return service.register(dtoProtectress)
     }
 }
