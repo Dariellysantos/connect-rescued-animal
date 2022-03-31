@@ -1,6 +1,6 @@
 package br.com.connectrescuedanimal.demo.dto
 
-data class ProtectressRegisterDTO(
+data class ProtectressRegisterDto(
     val id: Long?,
     val name: String,
     val address: String,

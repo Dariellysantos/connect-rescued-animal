@@ -1,6 +1,6 @@
-package br.com.connectrescuedanimal.demo.model
+package br.com.connectrescuedanimal.demo.dto
 
-data class NonprofitOrganization(
+data class NonprofitOrganizationDto(
     val id: Long,
     val cnpj: Long,
     val numberOfVacancies: Int,
