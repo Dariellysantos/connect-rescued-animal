@@ -1,6 +1,6 @@
 package br.com.connectrescuedanimal.demo.service
 
-import br.com.connectrescuedanimal.demo.dto.RegisterDTO
+import br.com.connectrescuedanimal.demo.dto.ProtectressRegisterDTO
 import br.com.connectrescuedanimal.demo.model.Protectress
 import org.springframework.stereotype.Service
 
@@ -9,7 +9,7 @@ class ProtectressService(
     private var protective: List<Protectress> = ArrayList()
 ) {
 
-    fun register(dtoProtectress: RegisterDTO): RegisterDTO {
+    fun register(dtoProtectress: ProtectressRegisterDTO): ProtectressRegisterDTO {
         protective.plus(
             Protectress(
                 id = dtoProtectress.id,
