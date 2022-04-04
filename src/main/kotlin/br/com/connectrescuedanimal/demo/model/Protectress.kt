@@ -1,7 +1,7 @@
 package br.com.connectrescuedanimal.demo.model
 
 data class Protectress(
-    var id: Long? = 1,
+    var id: Long?,
     val name: String,
     val address: String,
     val cpf: Long,
