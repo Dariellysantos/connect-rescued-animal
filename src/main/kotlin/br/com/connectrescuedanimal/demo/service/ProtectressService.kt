@@ -1,25 +1,23 @@
 package br.com.connectrescuedanimal.demo.service
 
 import br.com.connectrescuedanimal.demo.dto.ProtectressRegisterDto
+import br.com.connectrescuedanimal.demo.mapper.ProtectiveFormMapper
 import br.com.connectrescuedanimal.demo.model.Protectress
 import org.springframework.stereotype.Service
 
 @Service
 class ProtectressService(
-    private var protective: List<Protectress> = ArrayList()
+    private var protective: List<Protectress> = listOf(),
+    private val protectiveFormMapper: ProtectiveFormMapper
 ) {
 
     fun register(dtoProtectress: ProtectressRegisterDto): ProtectressRegisterDto {
-        protective.plus(
-            Protectress(
-                id = dtoProtectress.id,
-                name = dtoProtectress.name,
-                address = dtoProtectress.address,
-                cpf = dtoProtectress.cpf,
-                historic = null,
-                description = dtoProtectress.description,
-                email = dtoProtectress.email
-            )
+        var protectiveMapper = protectiveFormMapper.map(dtoProtectress)
+        protectiveMapper.id = protective.size.toLong() + 1
+
+
+        protective = protective.plus(
+            protectiveMapper
         )
         return dtoProtectress
     }
