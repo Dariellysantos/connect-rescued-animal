@@ -7,15 +7,19 @@ import org.springframework.stereotype.Service
 
 @Service
 class NonprofitOrganizationService(
-    private var nonprofitOrganization: List<NonprofitOrganization> = ArrayList(),
+    private var nonprofitOrganization: List<NonprofitOrganization> = listOf(),
     private val nonprofitOrganizationFormMapper: NonprofitOrganizationFormMapper
 
 ) {
-    fun register(dtoNonprofitOrganization: NonprofitOrganizationDto): NonprofitOrganizationDto {
-        nonprofitOrganization.plus(
-            nonprofitOrganizationFormMapper.map(dtoNonprofitOrganization)
+    fun register(dtoNonprofitOrganization: NonprofitOrganizationDto): NonprofitOrganization {
+
+        var nonprofitOrganizationMapper = nonprofitOrganizationFormMapper.map(dtoNonprofitOrganization)
+        nonprofitOrganizationMapper.id = nonprofitOrganization.size.toLong() + 1
+
+        nonprofitOrganization = nonprofitOrganization.plus(
+            nonprofitOrganizationMapper
         )
-        return dtoNonprofitOrganization
+        return nonprofitOrganizationMapper
 
     }
 }

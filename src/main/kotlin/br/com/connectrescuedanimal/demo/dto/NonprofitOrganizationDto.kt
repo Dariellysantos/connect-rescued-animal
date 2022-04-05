@@ -1,7 +1,7 @@
 package br.com.connectrescuedanimal.demo.dto
 
 data class NonprofitOrganizationDto(
-    val id: Long,
+    var id: Long,
     val cnpj: Long,
     val numberOfVacancies: Int,
     val address: String,
