@@ -1,11 +1,9 @@
 package br.com.connectrescuedanimal.demo.model
 
-import org.springframework.beans.factory.config.YamlProcessor.MatchStatus
-
-data class Match (
-    val id:Long,
-    val animal_id: Animals,
-    val type_of_vacancy_id: TypeOfVacancy,
+data class Match(
+    var id: Long?,
+    val animal_id: Long,
+    val type_of_vacancy_id: Long,
     val matchStatus: MatchsStatus = MatchsStatus.SOLICITADO
 
-        )
+)
