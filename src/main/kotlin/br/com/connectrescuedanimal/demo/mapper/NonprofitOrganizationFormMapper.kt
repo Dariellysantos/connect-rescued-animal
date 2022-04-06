@@ -5,7 +5,8 @@ import br.com.connectrescuedanimal.demo.model.NonprofitOrganization
 import org.springframework.stereotype.Component
 
 @Component
-class NonprofitOrganizationFormMapper : Mapper<NonprofitOrganizationDto, NonprofitOrganization> {
+class NonprofitOrganizationFormMapper(
+) : Mapper<NonprofitOrganizationDto, NonprofitOrganization> {
     override fun map(t: NonprofitOrganizationDto): NonprofitOrganization {
         return NonprofitOrganization(
             id = t.id,
