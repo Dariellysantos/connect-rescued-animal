@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component
 class ProtectiveFormMapper : Mapper<ProtectressRegisterDto, Protectress> {
     override fun map(t: ProtectressRegisterDto): Protectress {
         return Protectress(
-            id = t.id,
             name = t.name,
+            id = t.id,
             address = t.address,
             cpf = t.cpf,
             description = t.description,

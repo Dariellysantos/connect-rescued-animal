@@ -6,6 +6,6 @@ data class MatchDto (
     val id: Long?,
     val animal_id: Long,
     val type_of_vacancy_id: Long,
-    val matchStatus: MatchsStatus = MatchsStatus.SOLICITADO
+    var matchStatus: MatchsStatus = MatchsStatus.SOLICITADO
 
 )
