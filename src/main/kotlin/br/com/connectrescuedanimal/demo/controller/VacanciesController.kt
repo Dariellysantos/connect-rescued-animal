@@ -3,10 +3,7 @@ package br.com.connectrescuedanimal.demo.controller
 import br.com.connectrescuedanimal.demo.dto.VacanciesDto
 import br.com.connectrescuedanimal.demo.model.Vacancies
 import br.com.connectrescuedanimal.demo.service.VacanciesService
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 
 @RestController
@@ -17,8 +14,8 @@ class VacanciesController(private val service: VacanciesService) {
         return service.register(dtoVacancies)
     }
 
-//    @GetMapping("/{type-animal}")
-//    fun getFooByIdTypeVacancies(@PathVariable( type = "type-animal") Integer VacanciesDto.typeAnimal) {
-//        return service.getFooByIdTypeVacancies(dtoVacancies)
-//    }
+    @GetMapping
+    fun getByIdTypeAnimal(@RequestParam typeAnimal: String): MutableList<Int> {
+        return service.getByIdTypeAnimal(typeAnimal)
+    }
 }

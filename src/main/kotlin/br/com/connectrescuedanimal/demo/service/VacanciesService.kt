@@ -21,7 +21,14 @@ class VacanciesService(
         return vacanciesMapper
     }
 
-    fun getFooByIdTypeVacancies(dtoVacancies: VacanciesDto): VacanciesDto {
-        return dtoVacancies
+    fun getByIdTypeAnimal(typeAnimal: String): MutableList<Int> {
+        var listType = mutableListOf<Int>()
+        val listTypeAnimal = vacancies.forEach { t ->
+            if (t.typeAnimal == typeAnimal) {
+                listType.add(t.nonprofitOrganizationId.toInt())
+            }
+        }
+        return listType
+
     }
 }
