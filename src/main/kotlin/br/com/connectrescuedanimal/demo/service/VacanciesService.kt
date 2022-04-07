@@ -21,7 +21,7 @@ class VacanciesService(
         return vacanciesMapper
     }
 
-    fun getFooByIdTypeVacancies() {
-
+    fun getFooByIdTypeVacancies(dtoVacancies: VacanciesDto): VacanciesDto {
+        return dtoVacancies
     }
 }

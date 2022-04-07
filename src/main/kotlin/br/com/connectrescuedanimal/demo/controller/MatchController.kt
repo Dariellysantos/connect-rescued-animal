@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/match")
 class MatchController(private val service: MatchService) {
     @PostMapping
-    fun request(@RequestBody dtoMatch: MatchDto): Match {
-        return service.request(dtoMatch)
+    fun register(@RequestBody dtoMatch: MatchDto): Match {
+        return service.register(dtoMatch)
     }
 
     @PutMapping
-    fun change(@RequestBody dtoMatch: RequestMatchDto): Match {
-        return service.change(dtoMatch)
+    fun request(@RequestBody dtoMatch: RequestMatchDto): Match {
+        return service.request(dtoMatch)
     }
 }

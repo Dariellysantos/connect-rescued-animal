@@ -11,7 +11,7 @@ class MatchService(
     private var match: List<Match> = listOf(),
     private val matchFormMapper: MatchFormMapper
 ) {
-    fun request(dtoMatch: MatchDto): Match {
+    fun register(dtoMatch: MatchDto): Match {
 
         var matchMapper = matchFormMapper.map(dtoMatch)
         matchMapper.id = match.size.toLong() + 1
@@ -23,7 +23,7 @@ class MatchService(
 
     }
 
-    fun change(dtoMatch: RequestMatchDto): Match {
+    fun request(dtoMatch: RequestMatchDto): Match {
         val matchMapper = match.stream().filter { t ->
             t.id == dtoMatch.id
         }.findFirst().get()
