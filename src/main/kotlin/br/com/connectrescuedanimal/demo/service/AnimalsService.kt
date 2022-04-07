@@ -22,4 +22,10 @@ class AnimalsService(
 
     }
 
+    fun getById(id: Long): Animals {
+        var animalsById = animals.first { t ->
+            t.id == id
+        }
+        return animalsById
+    }
 }
