@@ -24,10 +24,12 @@ class MatchService(
     }
 
     fun request(dtoMatch: RequestMatchDto): Match {
-        val matchMapper = match.stream().filter { t ->
+
+        val matchMapper = match.first { t ->
             t.id == dtoMatch.id
-        }.findFirst().get()
+        }
         matchMapper.matchStatus = dtoMatch.matchStatus
+
         return matchMapper
 
     }
