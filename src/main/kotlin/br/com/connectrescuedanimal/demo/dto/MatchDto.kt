@@ -4,8 +4,8 @@ import br.com.connectrescuedanimal.demo.model.MatchsStatus
 
 data class MatchDto (
     val id: Long?,
-    val animal_id: Long,
-    val type_of_vacancy_id: Long,
+    val animalId: Long,
+    val typeOfVacancyId: Long,
     var matchStatus: MatchsStatus = MatchsStatus.SOLICITADO
 
 )

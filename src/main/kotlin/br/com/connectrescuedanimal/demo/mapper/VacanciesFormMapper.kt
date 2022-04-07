@@ -11,7 +11,7 @@ class VacanciesFormMapper : Mapper<VacanciesDto, Vacancies> {
             id = t.id,
             typeAnimal = t.typeAnimal,
             quantity = t.quantity,
-            nonprofitOrganization_id = t.nonprofitOrganization_id
+            nonprofitOrganizationId = t.nonprofitOrganizationId
         )
     }
 }

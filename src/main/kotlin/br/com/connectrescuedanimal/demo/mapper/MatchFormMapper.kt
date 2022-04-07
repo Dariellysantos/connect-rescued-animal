@@ -9,8 +9,8 @@ class MatchFormMapper : Mapper<MatchDto, Match> {
     override fun map(t: MatchDto): Match {
         return Match(
             id = t.id,
-            animal_id = t.animal_id,
-            type_of_vacancy_id = t.type_of_vacancy_id,
+            animalId = t.animalId,
+            typeOfVacancyId = t.typeOfVacancyId,
             matchStatus = t.matchStatus
         )
     }

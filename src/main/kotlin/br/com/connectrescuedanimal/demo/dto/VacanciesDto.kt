@@ -4,5 +4,5 @@ data class VacanciesDto(
     var id: Long,
     val typeAnimal: String,
     val quantity: Long,
-    val nonprofitOrganization_id: Long
+    val nonprofitOrganizationId: Long
 )
