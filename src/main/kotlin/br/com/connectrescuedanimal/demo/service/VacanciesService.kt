@@ -31,4 +31,12 @@ class VacanciesService(
         return listType
 
     }
+
+    fun getById(id: Long): Vacancies {
+        var vacanciesById = vacancies.first { t ->
+            t.id == id
+        }
+        return vacanciesById
+    }
+
 }

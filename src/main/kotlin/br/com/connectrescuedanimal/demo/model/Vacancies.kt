@@ -4,6 +4,6 @@ data class Vacancies(
 
     var id: Long,
     val typeAnimal: String,
-    val quantity: Long,
+    var quantity: Long,
     val nonprofitOrganizationId: Long
 )
