@@ -5,6 +5,6 @@ data class Animals(
     val genre: String,
     val breed: String,
     val type: String,
-    val status: SituationStatus = SituationStatus.DESABRIGADO,
+    val status: SituationStatus = SituationStatus.UNPROTECTED,
     val protectress: Long
 )
