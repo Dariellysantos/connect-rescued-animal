@@ -16,8 +16,8 @@ class MatchController(private val service: MatchService) {
         return service.register(dtoMatch)
     }
 
-    @PutMapping
-    fun request(@RequestBody dtoMatch: RequestMatchDto): Match {
-        return service.request(dtoMatch)
+    @PutMapping("/{id}")
+    fun request(@PathVariable id: Long, @RequestBody dtoMatch: RequestMatchDto): Match {
+        return service.request(dtoMatch, id)
     }
 }
