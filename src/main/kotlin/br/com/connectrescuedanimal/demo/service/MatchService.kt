@@ -2,6 +2,7 @@ package br.com.connectrescuedanimal.demo.service
 
 import br.com.connectrescuedanimal.demo.dto.MatchDto
 import br.com.connectrescuedanimal.demo.dto.RequestMatchDto
+import br.com.connectrescuedanimal.demo.exception.NotFoundException
 import br.com.connectrescuedanimal.demo.mapper.MatchFormMapper
 import br.com.connectrescuedanimal.demo.model.Match
 import br.com.connectrescuedanimal.demo.model.MatchsStatus
@@ -13,7 +14,9 @@ class MatchService(
     private var match: List<Match> = listOf(),
     private val matchFormMapper: MatchFormMapper,
     private val vacanciesService: VacanciesService,
-    private val animalsService: AnimalsService
+    private val animalsService: AnimalsService,
+    private val notFoundMessage: String = "\n" +
+            "vacancy not available"
 ) {
     fun register(dtoMatch: MatchDto): Match {
 
@@ -26,20 +29,22 @@ class MatchService(
         return matchMapper
     }
 
-    fun request(dtoMatch: RequestMatchDto): Match {
-
+    fun request(dtoMatch: RequestMatchDto, id: Long): Match {
         val matchMapper = match.first { t ->
-            t.id == dtoMatch.id
+            t.id == id
         }
         matchMapper.matchStatus = dtoMatch.matchStatus
 
-        val quantityVacancies = vacanciesService.getById(matchMapper.typeOfVacancyId).quantity
-        if (matchMapper.matchStatus == MatchsStatus.ACCEPT && quantityVacancies < 0) {
-            quantityVacancies - 1
+        val vacancies = vacanciesService.getById(matchMapper.typeOfVacancyId)
+        if (matchMapper.matchStatus == MatchsStatus.ACCEPT && vacancies.quantity > 0) {
+            vacancies.quantity = vacancies.quantity - 1
+
+            val animal = animalsService.getById(matchMapper.animalId)
+            animal.status = SituationStatus.SHELTERED
+        } else {
+            throw Exception(NotFoundException(notFoundMessage))
         }
 
-        var situationStatus = animalsService.getById(matchMapper.animalId).status
-        situationStatus = SituationStatus.SHELTERED
 
         return matchMapper
     }

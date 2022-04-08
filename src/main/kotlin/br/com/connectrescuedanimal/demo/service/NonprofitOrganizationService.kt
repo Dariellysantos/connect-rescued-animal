@@ -13,7 +13,7 @@ class NonprofitOrganizationService(
 ) {
     fun register(dtoNonprofitOrganization: NonprofitOrganizationDto): NonprofitOrganization {
 
-        var nonprofitOrganizationMapper = nonprofitOrganizationFormMapper.map(dtoNonprofitOrganization)
+        val nonprofitOrganizationMapper = nonprofitOrganizationFormMapper.map(dtoNonprofitOrganization)
         nonprofitOrganizationMapper.id = nonprofitOrganization.size.toLong() + 1
 
         nonprofitOrganization = nonprofitOrganization.plus(

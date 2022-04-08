@@ -12,7 +12,7 @@ class ProtectressService(
 ) {
 
     fun register(dtoProtectress: ProtectressRegisterDto): Protectress {
-        var protectiveMapper = protectiveFormMapper.map(dtoProtectress)
+        val protectiveMapper = protectiveFormMapper.map(dtoProtectress)
         protectiveMapper.id = protective.size.toLong() + 1
 
 
