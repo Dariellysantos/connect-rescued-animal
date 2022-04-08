@@ -1,10 +1,11 @@
 package br.com.connectrescuedanimal.demo.dto
 
 import javax.validation.constraints.NotEmpty
+import javax.validation.constraints.NotNull
 
 data class VacanciesDto(
     var id: Long,
     @field: NotEmpty val typeAnimal: String,
-    @field: NotEmpty var quantity: Long,
+    @field:NotNull var quantity: Long,
     val nonprofitOrganizationId: Long
 )
