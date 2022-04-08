@@ -5,8 +5,8 @@ import javax.validation.constraints.Size
 
 data class NonprofitOrganizationDto(
     var id: Long,
-    @NotEmpty @Size(min = 14) val cnpj: Long,
-    @NotEmpty val numberOfVacancies: Int,
-    @NotEmpty val address: String,
+    @field: NotEmpty @Size(min = 14) val cnpj: Long,
+    @field: NotEmpty val numberOfVacancies: Int,
+    @field: NotEmpty val address: String,
     val linkPage: String
 )

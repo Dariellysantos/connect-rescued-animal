@@ -7,7 +7,7 @@ data class AnimalsDto(
     val id: Long,
     val genre: String,
     val breed: String,
-    @NotEmpty val type: String,
+    @field: NotEmpty val type: String,
     val status: SituationStatus = SituationStatus.UNPROTECTED,
-    @NotEmpty val protectress: Long
+    @field: NotEmpty val protectress: Long
 )

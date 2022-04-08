@@ -5,9 +5,9 @@ import javax.validation.constraints.Size
 
 data class ProtectressRegisterDto(
     var id: Long,
-    @NotEmpty val name: String,
-    @NotEmpty val address: String,
-    @NotEmpty @Size(min = 11) val cpf: Long,
+    @field: NotEmpty val name: String,
+    @field: NotEmpty val address: String,
+    @field: NotEmpty @Size(min = 11) val cpf: Long,
     val description: String,
-    @NotEmpty val email: String
+    @field: NotEmpty val email: String
 )
