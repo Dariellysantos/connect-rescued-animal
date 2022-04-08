@@ -24,9 +24,9 @@ class VacanciesService(
 
     fun getByIdTypeAnimal(typeAnimal: String): MutableList<Int> {
         val listType = mutableListOf<Int>()
+
         val listTypeAnimal = vacancies.forEach { t ->
             listType.add(t.nonprofitOrganizationId.toInt())
-
         }
         return listType
 
