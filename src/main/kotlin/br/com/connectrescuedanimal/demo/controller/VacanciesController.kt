@@ -4,13 +4,14 @@ import br.com.connectrescuedanimal.demo.dto.VacanciesDto
 import br.com.connectrescuedanimal.demo.model.Vacancies
 import br.com.connectrescuedanimal.demo.service.VacanciesService
 import org.springframework.web.bind.annotation.*
+import javax.validation.Valid
 
 
 @RestController
 @RequestMapping("/vacancies")
 class VacanciesController(private val service: VacanciesService) {
     @PostMapping
-    fun register(@RequestBody dtoVacancies: VacanciesDto): Vacancies {
+    fun register(@RequestBody @Valid dtoVacancies: VacanciesDto): Vacancies {
         return service.register(dtoVacancies)
     }
 

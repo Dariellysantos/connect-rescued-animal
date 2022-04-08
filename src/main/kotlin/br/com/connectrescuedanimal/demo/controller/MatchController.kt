@@ -6,13 +6,14 @@ import br.com.connectrescuedanimal.demo.dto.RequestMatchDto
 import br.com.connectrescuedanimal.demo.model.Match
 import br.com.connectrescuedanimal.demo.service.MatchService
 import org.springframework.web.bind.annotation.*
+import javax.validation.Valid
 
 
 @RestController
 @RequestMapping("/match")
 class MatchController(private val service: MatchService) {
     @PostMapping
-    fun register(@RequestBody dtoMatch: MatchDto): Match {
+    fun register(@RequestBody @Valid dtoMatch: MatchDto): Match {
         return service.register(dtoMatch)
     }
 
