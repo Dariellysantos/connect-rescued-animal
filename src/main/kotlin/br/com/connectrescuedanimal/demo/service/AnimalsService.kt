@@ -2,30 +2,26 @@ package br.com.connectrescuedanimal.demo.service
 
 import br.com.connectrescuedanimal.demo.dto.AnimalsDto
 import br.com.connectrescuedanimal.demo.mapper.AnimalsFormMapper
-import br.com.connectrescuedanimal.demo.model.Animals
+import br.com.connectrescuedanimal.demo.model.Animal
+import br.com.connectrescuedanimal.demo.repository.AnimalsRepository
 import org.springframework.stereotype.Service
 
 @Service
 class AnimalsService(
-    private var animals: List<Animals> = listOf(),
-    private val animalsFormMapper: AnimalsFormMapper
+    private var animals: List<Animal> = listOf(),
+    private val animalsFormMapper: AnimalsFormMapper,
+    private val repository: AnimalsRepository
 
 
 ) {
-    fun register(dtoAnimals: AnimalsDto): Animals {
+    fun register(dtoAnimals: AnimalsDto): Animal {
         var animalsMapper = animalsFormMapper.map(dtoAnimals)
-        animalsMapper.id = animals.size.toLong() + 1
-        animals = animals.plus(
-            animalsMapper
-        )
-        return animalsMapper
+        var saveAnimal = repository.save(animalsMapper)
+        return saveAnimal
 
     }
 
-    fun getById(id: Long): Animals {
-        var animalsById = animals.first { t ->
-            t.id == id
-        }
-        return animalsById
+    fun getById(id: Long): Animal {
+        return repository.getById(id)
     }
 }

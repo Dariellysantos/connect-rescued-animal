@@ -3,40 +3,28 @@ package br.com.connectrescuedanimal.demo.service
 import br.com.connectrescuedanimal.demo.dto.VacanciesDto
 import br.com.connectrescuedanimal.demo.mapper.VacanciesFormMapper
 import br.com.connectrescuedanimal.demo.model.Vacancies
+import br.com.connectrescuedanimal.demo.repository.VacanciesRepository
 import org.springframework.stereotype.Service
 
 @Service
 class VacanciesService(
-    var vacancies: List<Vacancies>,
     private val vacanciesFormMapper: VacanciesFormMapper,
+    private val repository: VacanciesRepository
 
-    ) {
+) {
     fun register(dtoVacancies: VacanciesDto): Vacancies {
         val vacanciesMapper = vacanciesFormMapper.map(dtoVacancies)
-        vacanciesMapper.id = vacancies.size.toLong() + 1
-
-
-        vacancies = vacancies.plus(
-            vacanciesMapper
-        )
+        repository.save(vacanciesMapper)
         return vacanciesMapper
     }
 
     fun getByIdTypeAnimal(typeAnimal: String): MutableList<Int> {
-        val listType = mutableListOf<Int>()
-
-        val listTypeAnimal = vacancies.forEach { t ->
-            listType.add(t.nonprofitOrganizationId.toInt())
-        }
-        return listType
-
+        val vacancies = repository.findByTypeAnimal(typeAnimal)
+        return vacancies.map { it.nonprofitOrganizationId.toInt() }.toMutableList()
     }
 
     fun getById(id: Long): Vacancies {
-        val vacanciesById = vacancies.first { t ->
-            t.id == id
-        }
-        return vacanciesById
+        return repository.getById(id)
     }
 
 }

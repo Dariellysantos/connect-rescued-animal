@@ -3,8 +3,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.6.5"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
+	id("org.jetbrains.kotlin.plugin.jpa") version "1.6.20"
+	id("org.jetbrains.kotlin.plugin.noarg") version "1.6.20"
+	id("org.flywaydb.flyway") version "8.5.8"
 	kotlin("jvm") version "1.6.10"
 	kotlin("plugin.spring") version "1.6.10"
+
 }
 
 group = "br.com.connectrescuedanimal"
@@ -17,14 +21,17 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.h2database:h2:2.1.212")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.6")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("org.jetbrains.kotlin:kotlin-noarg:1.6.20")
+	implementation("org.flywaydb:flyway-core:8.5.8")
+	implementation("org.springframework.boot:spring-boot-starter-cache:2.6.6")
+	implementation("com.h2database:h2:2.1.212")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.6")
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<KotlinCompile> {
