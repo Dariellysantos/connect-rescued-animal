@@ -10,6 +10,6 @@ data class TypeOfVacancy(
     @Column(name = "typeofanimal")
     val typeOfAnimal: String,
     val quantity: Int,
-    @Enumerated(value = EnumType.STRING)
-    val nonprofitOrganization: NonprofitOrganization
+    @Column(name = "nonprofitorganization")
+    val nonprofitOrganization: Long
 )

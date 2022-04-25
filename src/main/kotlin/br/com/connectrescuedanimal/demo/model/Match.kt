@@ -10,7 +10,8 @@ data class Match(
     val animalId: Long,
     @Column(name = "typeofvacancyid")
     val typeOfVacancyId: Long,
-    @OneToOne
+    @Enumerated(value = EnumType.STRING)
+    @Column(name = "matchstatus")
     var matchStatus: MatchsStatus
 
 )
