@@ -1,6 +1,7 @@
 package br.com.connectrescuedanimal.demo.service
 
 import br.com.connectrescuedanimal.demo.dto.VacanciesDto
+import br.com.connectrescuedanimal.demo.dto.VacanciesQuantityDto
 import br.com.connectrescuedanimal.demo.mapper.VacanciesFormMapper
 import br.com.connectrescuedanimal.demo.model.Vacancies
 import br.com.connectrescuedanimal.demo.repository.VacanciesRepository
@@ -25,6 +26,10 @@ class VacanciesService(
 
     fun getById(id: Long): Vacancies {
         return repository.getById(id)
+    }
+
+    fun report(): List<VacanciesQuantityDto> {
+        return repository.report()
     }
 
 }

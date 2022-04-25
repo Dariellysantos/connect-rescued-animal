@@ -10,7 +10,9 @@ data class Animal(
     val genre: String,
     val breed: String,
     val type: String,
-    val protectress: Long,
+    @ManyToOne
+    @JoinColumn(name = "protectress")
+    val protectress: Protectress,
     @Enumerated(value = EnumType.STRING)
     var status: SituationStatus = SituationStatus.UNPROTECTED
 )
