@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?userSsl=true
+    username: user
+    password: user
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  flyway:
+    baseline-on-migrate: true
+flyway:
+  url: jdbc:mysql://localhost:3306/mysql
+  schemas: demo
+  user: "user"
+  password: "user"
