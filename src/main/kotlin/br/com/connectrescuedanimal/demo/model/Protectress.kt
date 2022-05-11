@@ -11,7 +11,5 @@ data class Protectress(
     val address: String,
     val cpf: Long,
     val description: String,
-    @OneToMany(mappedBy = "protectress")
-    val historic: MutableList<Animal>? = mutableListOf(),
     val email: String
 )

@@ -6,6 +6,7 @@ import br.com.connectrescuedanimal.demo.mapper.VacanciesFormMapper
 import br.com.connectrescuedanimal.demo.model.Vacancies
 import br.com.connectrescuedanimal.demo.repository.VacanciesRepository
 import org.springframework.stereotype.Service
+import java.time.LocalDate
 
 @Service
 class VacanciesService(
@@ -16,6 +17,7 @@ class VacanciesService(
     fun register(dtoVacancies: VacanciesDto): Vacancies {
         val vacanciesMapper = vacanciesFormMapper.map(dtoVacancies)
         repository.save(vacanciesMapper)
+        vacanciesMapper.creationDate = LocalDate.now()
         return vacanciesMapper
     }
 

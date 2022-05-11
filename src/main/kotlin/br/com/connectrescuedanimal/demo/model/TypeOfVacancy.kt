@@ -3,7 +3,7 @@ package br.com.connectrescuedanimal.demo.model
 import javax.persistence.*
 
 @Entity
-@Table(name = "typeofvacancy")
+@Table(name = "vacancies")
 data class TypeOfVacancy(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,

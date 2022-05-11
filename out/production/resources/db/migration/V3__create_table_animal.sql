@@ -1,3 +1,4 @@
+drop table if exists animal;
 create table animal(
    id bigint not null auto_increment,
    genre varchar(50),
@@ -6,4 +7,4 @@ create table animal(
    status varchar(50),
    protectress bigint not null,
    primary key (id)
-   )
+ );

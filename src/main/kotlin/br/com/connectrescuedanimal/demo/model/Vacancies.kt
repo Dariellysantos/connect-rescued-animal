@@ -1,5 +1,6 @@
 package br.com.connectrescuedanimal.demo.model
 
+import java.time.LocalDate
 import javax.persistence.*
 
 @Entity
@@ -10,6 +11,7 @@ data class Vacancies(
     @Column(name = "typeanimal")
     val typeAnimal: String,
     var quantity: Long,
-    @Column(name = "nonprofitorganizationid")
-    val nonprofitOrganizationId: Long
+    @Column(name = "nonprofitOrganizationid")
+    val nonprofitOrganizationId: Long,
+    var creationDate: LocalDate?,
 )
