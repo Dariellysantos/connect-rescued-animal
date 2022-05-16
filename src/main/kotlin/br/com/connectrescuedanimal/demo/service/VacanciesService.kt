@@ -11,8 +11,9 @@ import java.time.LocalDate
 @Service
 class VacanciesService(
     private val vacanciesFormMapper: VacanciesFormMapper,
-    private val repository: VacanciesRepository
-
+    private val repository: VacanciesRepository,
+    private val notFoundMessage: String =
+        "There is no vacancy available",
 ) {
     fun register(dtoVacancies: VacanciesDto): Vacancies {
         val vacanciesMapper = vacanciesFormMapper.map(dtoVacancies)
@@ -23,7 +24,11 @@ class VacanciesService(
 
     fun getByIdTypeAnimal(typeAnimal: String): MutableList<Int> {
         val vacancies = repository.findByTypeAnimal(typeAnimal)
-        return vacancies.map { it.nonprofitOrganizationId.toInt() }.toMutableList()
+        if (vacancies.isNotEmpty()) {
+            return vacancies.map { it.nonprofitOrganizationId.toInt() }.toMutableList()
+        } else {
+            throw Exception(notFoundMessage)
+        }
     }
 
     fun getById(id: Long): Vacancies {
