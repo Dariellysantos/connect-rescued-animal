@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.connectrescuedanimal.demo.service.VacanciesServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-19T19:37:31" hostname="CRED-C02GV0DK0KPF" time="96.461">
+  <properties/>
+  <testcase name="when there is no vacancy for the animal returns an exception()" classname="br.com.connectrescuedanimal.demo.service.VacanciesServiceTest" time="96.461"/>
+  <system-out><![CDATA[16:37:30.312 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for VacanciesFormMapper name=#1
+16:37:30.767 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for VacanciesRepository name=#2
+16:37:33.140 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for List name=child of #2#3
+16:37:33.148 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering [] on VacanciesRepository(#2).findByTypeAnimal(cachorro)
+16:37:34.363 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesFormMapper(#1) on VacanciesFormMapper(#1).toString()
+16:37:34.409 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesRepository(#2) on VacanciesRepository(#2).toString()
+16:38:39.702 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesFormMapper(#1) on VacanciesFormMapper(#1).toString()
+16:38:39.705 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesRepository(#2) on VacanciesRepository(#2).toString()
+16:39:02.746 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesFormMapper(#1) on VacanciesFormMapper(#1).toString()
+16:39:02.748 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering VacanciesRepository(#2) on VacanciesRepository(#2).toString()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
