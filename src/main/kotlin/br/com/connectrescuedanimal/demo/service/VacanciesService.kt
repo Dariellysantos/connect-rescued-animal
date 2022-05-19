@@ -22,7 +22,7 @@ class VacanciesService(
         return vacanciesMapper
     }
 
-    fun getByIdTypeAnimal(typeAnimal: String): MutableList<Int> {
+    fun getNonprofitOrganizationByTypeAnimal(typeAnimal: String): MutableList<Int> {
         val vacancies = repository.findByTypeAnimal(typeAnimal)
         if (vacancies.isNotEmpty()) {
             return vacancies.map { it.nonprofitOrganizationId.toInt() }.toMutableList()

@@ -27,7 +27,7 @@ class VacanciesController(private val service: VacanciesService) {
     fun getByIdTypeAnimal(
         @RequestParam typeAnimal: String
     ): MutableList<Int> {
-        return service.getByIdTypeAnimal(typeAnimal)
+        return service.getNonprofitOrganizationByTypeAnimal(typeAnimal)
     }
 
     @GetMapping("/report")
