@@ -4,11 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bc371e-8ac1-4d48-a963-263619efd75c" name="Changes" comment="test: tested the function findByTypeAnimal">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/controller/RootControllerTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/integration/VacanciesRepositoryTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/model/NonprofitOrganizationTestIntegration.kt" afterDir="false" />
+    <list default="true" id="21bc371e-8ac1-4d48-a963-263619efd75c" name="Changes" comment="feat: tests">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/META-INF/demo.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/DemoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/DemoApplicationKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/AnimalsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/MatchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/NonprofitOrganizationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/ProtectressController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/RootController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/controller/VacanciesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/AnimalsDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/ErrorView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/MatchDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/NonprofitOrganizationDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/ProtectressRegisterDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/RequestMatchDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/VacanciesDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/dto/VacanciesQuantityDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/exception/ExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/exception/NotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/AnimalsFormMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/Mapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/MatchFormMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/NonprofitOrganizationFormMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/ProtectiveFormMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/mapper/VacanciesFormMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/Animal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/Match.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/MatchsStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/NonprofitOrganization.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/Protectress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/SituationStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/TypeOfVacancy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/model/Vacancies.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/repository/AnimalsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/repository/MatchRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/repository/NonprofitOrganizationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/repository/ProtectressRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/repository/VacanciesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/service/AnimalsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/service/MatchService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/service/NonprofitOrganizationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/service/ProtectressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/connectrescuedanimal/demo/service/VacanciesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/META-INF/demo.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/DemoApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$must show status 200 when called from root$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$must show status 200 when called from root$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there are vacancies in the register$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there are vacancies in the register$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there is a vacancy for the wanted animal$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there is a vacancy for the wanted animal$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 500 when there is no vacancy for the sought animal$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 500 when there is no vacancy for the sought animal$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/model/VacanciesTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$when there is no vacancy for the animal returns an exception$$inlined$assertThrows$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$when there is no vacancy for the animal returns an exception$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$must show status 200 when called from root$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest$must show status 200 when called from root$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/RootControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there are vacancies in the register$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there are vacancies in the register$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there is a vacancy for the wanted animal$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 200 when there is a vacancy for the wanted animal$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 500 when there is no vacancy for the sought animal$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest$must return status 500 when there is no vacancy for the sought animal$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/controller/VacanciesControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/br.com.connectrescuedanimal.demo.controller.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" afterDir="false" />
@@ -21,27 +95,60 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$must list number of vacancies by type of animals$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$when there is no vacancy for the animal returns an exception$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest$when there is no vacancy for the animal returns an exception$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/service/VacanciesServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/dto/VacanciesDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/dto/VacanciesDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/mapper/NonprofitOrganizationFormMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/mapper/NonprofitOrganizationFormMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/mapper/VacanciesFormMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/mapper/VacanciesFormMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/model/NonprofitOrganization.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/model/NonprofitOrganization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/model/Vacancies.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/br/com/connectrescuedanimal/demo/model/Vacancies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/model/VacanciesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/br/com/connectrescuedanimal/demo/model/VacanciesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
@@ -53,20 +160,17 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
@@ -79,18 +183,19 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/br.com.connectrescuedanimal.demo.service.VacanciesServiceTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/br.com.connectrescuedanimal.demo.service.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-br.com.connectrescuedanimal.demo.service.VacanciesServiceTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/dto/VacanciesDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/dto/VacanciesDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/mapper/VacanciesFormMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/mapper/VacanciesFormMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/model/NonprofitOrganization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/model/NonprofitOrganization.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/model/Vacancies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/connectrescuedanimal/demo/model/Vacancies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/model/NonprofitOrganizationTestIntegration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/model/VacanciesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/connectrescuedanimal/demo/model/VacanciesTest.kt" afterDir="false" />
     </list>
     <list id="5be7ebc6-64a9-4802-8009-3ecf7e0266d3" name="Changes by edercale" comment="Changes by edercale" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,11 +338,12 @@
       <recent name="br.com.connectrescuedanimal.demo.model" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.connectrescuedanimal.demo.service" />
       <recent name="br.com.connectrescuedanimal.demo.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.VacanciesControllerTest.must return status 200 when there are vacancies in the register">
-    <configuration name="RootControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.VacanciesControllerTest.must return status 200 when there is a vacancy for the wanted animal">
+    <configuration name="DemoApplicationTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -250,7 +356,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.com.connectrescuedanimal.demo.controller.RootControllerTest&quot;" />
+            <option value="&quot;br.com.connectrescuedanimal.demo.DemoApplicationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -260,7 +366,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RootControllerTest.must show status 200 when called from reports" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'br.com.connectrescuedanimal.demo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -273,7 +379,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.com.connectrescuedanimal.demo.controller.RootControllerTest.must show status 200 when called from reports&quot;" />
+            <option value="&quot;br.com.connectrescuedanimal.demo.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -283,7 +389,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VacanciesControllerTest.must return status 200 when there are vacancies in the register" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VacanciesControllerIntegrationTest.must generate a report (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -296,7 +402,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.must return status 200 when there are vacancies in the register&quot;" />
+            <option value="&quot;br.com.connectrescuedanimal.demo.integration.VacanciesControllerIntegrationTest.must generate a report&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -306,7 +412,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VacanciesControllerTest.must return status 500 when there is no vacancy for the sought animal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VacanciesControllerIntegrationTest.must list vacancies according to animal type (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -319,7 +425,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.must return status 500 when there is no vacancy for the sought animal&quot;" />
+            <option value="&quot;br.com.connectrescuedanimal.demo.integration.VacanciesControllerIntegrationTest.must list vacancies according to animal type&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -329,7 +435,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VacanciesControllerTest.must show status 200 when called from root" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VacanciesControllerTest.must return status 200 when there is a vacancy for the wanted animal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -342,7 +448,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.must show status 200 when called from root&quot;" />
+            <option value="&quot;br.com.connectrescuedanimal.demo.controller.VacanciesControllerTest.must return status 200 when there is a vacancy for the wanted animal&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -354,11 +460,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VacanciesControllerTest.must return status 200 when there are vacancies in the register" />
-        <item itemvalue="Gradle.VacanciesControllerTest.must return status 500 when there is no vacancy for the sought animal" />
-        <item itemvalue="Gradle.VacanciesControllerTest.must show status 200 when called from root" />
-        <item itemvalue="Gradle.RootControllerTest.must show status 200 when called from reports" />
-        <item itemvalue="Gradle.RootControllerTest" />
+        <item itemvalue="Gradle.VacanciesControllerTest.must return status 200 when there is a vacancy for the wanted animal" />
+        <item itemvalue="Gradle.VacanciesControllerIntegrationTest.must generate a report (1)" />
+        <item itemvalue="Gradle.VacanciesControllerIntegrationTest.must list vacancies according to animal type (1)" />
+        <item itemvalue="Gradle.Tests in 'br.com.connectrescuedanimal.demo'" />
+        <item itemvalue="Gradle.DemoApplicationTests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -370,13 +476,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648499393164</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: created data class match">
-      <created>1648568679017</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1648568679018</updated>
     </task>
     <task id="LOCAL-00012" summary="feat: created endpoint register protectress">
       <created>1648583340565</created>
@@ -714,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652990234619</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="test: created api test with the job endpoints">
+      <created>1653331406871</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1653331406873</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -730,8 +836,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: created endpoint for changed status of match" />
-    <MESSAGE value="feat: created endpoint for vacancies" />
     <MESSAGE value="fix: changed things in the code" />
     <MESSAGE value="fix: Default writing change" />
     <MESSAGE value="fix: modified the words in portuguese" />
@@ -755,7 +859,9 @@
     <MESSAGE value="feat: implemented condition for vacancies not available for the type of animal sought" />
     <MESSAGE value="fix: changed function name" />
     <MESSAGE value="test: tested the function findByTypeAnimal" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: tested the function findByTypeAnimal" />
+    <MESSAGE value="test: created api test with the job endpoints" />
+    <MESSAGE value="feat: tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

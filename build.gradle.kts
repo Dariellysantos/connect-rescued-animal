@@ -36,6 +36,7 @@ dependencies {
     testImplementation("org.testcontainers:junit-jupiter:1.17.1")
     testImplementation("org.testcontainers:mysql:1.17.1")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.6")
+    implementation("org.springdoc:springdoc-openapi-ui:1.6.8")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

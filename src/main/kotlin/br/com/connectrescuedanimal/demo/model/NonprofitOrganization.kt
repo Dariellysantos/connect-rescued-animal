@@ -6,11 +6,11 @@ import javax.persistence.*
 @Table(name = "nonprofitOrganization")
 data class NonprofitOrganization(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long,
+    val id: Long? = null,
     val cnpj: Long,
     @Column(name = "numberofvacancies")
     val numberOfVacancies: Int,
     val address: String,
     @Column(name = "linkpage")
-    val linkPage: String
+    val linkPage: String,
 )

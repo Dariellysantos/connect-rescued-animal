@@ -7,7 +7,7 @@ import javax.persistence.*
 @Table(name = "vacancies")
 data class Vacancies(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long,
+    val id: Long? = null,
     @Column(name = "typeanimal")
     val typeAnimal: String,
     var quantity: Long,

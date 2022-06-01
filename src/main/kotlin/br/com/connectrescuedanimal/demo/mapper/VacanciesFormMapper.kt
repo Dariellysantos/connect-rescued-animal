@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component
 class VacanciesFormMapper : Mapper<VacanciesDto, Vacancies> {
     override fun map(t: VacanciesDto): Vacancies {
         return Vacancies(
-            id = t.id,
             typeAnimal = t.typeAnimal,
             quantity = t.quantity,
             nonprofitOrganizationId = t.nonprofitOrganizationId,
